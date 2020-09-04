@@ -14,7 +14,7 @@ def auth():
     coords.append([coord['lat'], coord['lon']])
     print(coords)
 
-@app.route('admin')
+@app.route('/admin')
 def admin():
     return render_template('test.html', lat=coords[-1][0], lon=coords[-1][1])
 
